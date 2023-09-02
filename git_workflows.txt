@@ -1,0 +1,10 @@
+1 Main branch has changed:
+    # Change to the main branch and update it
+    - git checkout main
+    - git pull origin main
+    # Go back to your branch       
+    - git checkout <your branch>
+    # Apply the updated changes to your branch
+    - git merge main
+    # Not needed if you don't have a public branch
+    - git push origin <your branch>
