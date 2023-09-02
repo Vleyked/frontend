@@ -8,3 +8,10 @@
     - git merge main
     # Not needed if you don't have a public branch
     - git push origin <your branch>
+
+2. Update current branch
+    - git pull origin main
+
+3. Create a new branch
+    - git checkout -b new_branch
+    
