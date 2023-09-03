@@ -1,3 +1,5 @@
+/* Objects */
+
 body {
     display: flex;
     justify-content: center;
@@ -19,7 +21,7 @@ body {
     left: 50%;
     width: 100px;
     height: 100px;
-    background-color: #FFD700;
+    background: radial-gradient(circle, #FFD700, #FFA500);
     border-radius: 50%;
     transform: translate(-50%, -50%);
     animation: sunPulse 2s infinite alternate;
@@ -43,7 +45,7 @@ body {
     left: 50%;
     width: 50px;
     height: 50px;
-    background-color: #00F;
+    background: radial-gradient(circle, rgb(30, 105, 218), rgb(11, 11, 197));
     border-radius: 50%;
     transform: translateX(-50%);
 }
@@ -71,6 +73,30 @@ body {
     transform: translateX(-50%);
 }
 
+.phobos {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    background-color: #d1b2a3;
+    border-radius: 50%;
+    transform-origin: 20px 0;
+    animation: orbitPhobos 3s infinite linear;
+}
+
+.deimos {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    width: 8px;
+    height: 8px;
+    background-color: #bd9b8a;
+    border-radius: 50%;
+    transform-origin: 20px 0;
+    animation: orbitPhobos 3s infinite linear;
+}
+
 .moon {
     position: absolute;
     top: 50%; /* Adjusts the initial position so it starts from top of Earth */
@@ -82,6 +108,9 @@ body {
     transform-origin: 40px 0;  /* This ensures the rotation center is the Earth */
     animation: orbitMoon 2.5s infinite linear;
 }
+
+
+/* animations */
 
 @keyframes orbitEarth {
     0% {
@@ -107,6 +136,26 @@ body {
     }
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+@keyframes orbitPhobos {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+@keyframes orbiDeimos {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
     }
 }
 
