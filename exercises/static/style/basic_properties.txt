@@ -1,0 +1,12 @@
+Inherited properties
+
+Not Inherited properties
+* background
+* border
+* margin
+* padding
+* width
+* height
+
+**HOWEVER**: style property has priority over link css but 
+             it doesnt have it if the style property is inherited.
