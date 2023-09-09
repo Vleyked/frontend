@@ -1,0 +1,64 @@
+/* Universal selector */
+/* * {
+    margin: 0;
+    padding: 0;
+    font-size: 9em;
+} */
+
+/* identify elements by the name of the tag */
+h3 {
+    color: blue;
+    font-size: 1em;
+}
+
+/* identify by its id */
+#special {
+    color: red;
+    font-size: 2em;
+}
+
+/* identify by class */
+h3.myspecialclass {
+    color: blue;
+}
+
+/* Attribute selectors */
+input[type="text"] {
+    border: 5px solid blue;
+}
+
+
+
+/* ADVANCED not needed for the test  reactive logic in css */
+
+/* Pseudo classes */
+/* Selects all anchor tags whenthey are beign hovered over */
+a:hover {
+    text-decoration: underline;
+    color: brown; 
+}
+
+input:not([type="password"]) {
+    border: 5px solid red;
+}
+
+/* Insert content before an element */
+p::before {
+    content: "Note: ";
+    font-weight: bold;
+}
+
+p::first-line {
+    font-weight:lighter;
+}
+
+
+/* Workshop */
+
+body {
+    counter-reset: section;
+}
+h4::before {
+    counter-increment: section;
+    content: "Counter " counter(section) "->";
+}
