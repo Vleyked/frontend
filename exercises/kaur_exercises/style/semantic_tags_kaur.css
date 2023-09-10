@@ -1,8 +1,8 @@
 /* Reset some defaults browser styles */
 
 * {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
@@ -13,14 +13,12 @@ nav a {
     text-decoration: none;
     padding-inline: 20px;
     color: #000000;
-    transition: color 0.7s ease;
-    transition: scale 0.7s ease;
-
+    transform: color(0.4s ease);
 }
 
 nav a:hover {
     color: #ffffff; 
-    transform: scale(1.8); 
+    transform: scale(1.2); 
 }
 
 body {
